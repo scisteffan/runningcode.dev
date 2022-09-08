@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Knile-Italic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/public/knile-mediumitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Knile";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/public/knile-regular-webfont.woff2") format("woff2");
+}
+
+@layer components {
+  .hero {
+    @apply w-full text-[#333];
+  }
+}
+
+.title {
+  @apply w-full pt-20 m-0;
+  font-size: 48px;
+}
+
+.title,
+.description {
+  @apply text-center;
+}
